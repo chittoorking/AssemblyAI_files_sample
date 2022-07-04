@@ -2,8 +2,7 @@ import json
 import requests
 import pprint
 from credentials import *
-api_key = '50c7e0e64e2f4e77a9ae2717adebb557'
-# 50c7e0e64e2f4e77a9ae2717adebb557
+api_key = 'Replace with your api key'
 
 TRANSCRIPT_ENDPOINT='https://api.assemblyai.com/v2/transcript'
 
@@ -11,6 +10,7 @@ response=requests.post(
     TRANSCRIPT_ENDPOINT,
     headers={'authorization':api_key,'content-type':'application/json'},
     json ={
+        //replace with your custom audio file from internet in audio_url
         'audio_url':"https://nicetalkingwithyou.com/wp-content/uploads/2018/07/003NTWY_U1_CL.mp3",
         'sentiment_analysis':True,
     }
