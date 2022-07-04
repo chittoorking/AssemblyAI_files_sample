@@ -2,10 +2,10 @@ import json
 import requests
 import pprint
 from credentials import *
-api_key ='50c7e0e64e2f4e77a9ae2717adebb557'
-# 50c7e0e64e2f4e77a9ae2717adebb557
+api_key ='Replace with your api key'
 
-TRANSCRIPT_ENDPOINT='https://api.assemblyai.com/v2/transcript/ojg1fpq6k9-6bf8-4bda-8c88-b7ab303c13f8'
+#Replace id with id that you copy fom credentials.py output
+TRANSCRIPT_ENDPOINT='https://api.assemblyai.com/v2/transcript/id'
 
 response=requests.get(
     TRANSCRIPT_ENDPOINT,
@@ -13,4 +13,3 @@ response=requests.get(
 )
 response_json = response.json()
 print(pprint.pprint(response_json))
-# ojg102hu79-5a09-43c3-a9cd-242f5d8bcb64
